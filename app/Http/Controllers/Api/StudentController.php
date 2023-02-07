@@ -14,7 +14,15 @@ class StudentController extends Controller{
         }else{
             return Student::where('reg_no',$request->reg_no)->get();       
         }                  
-    }     
+    }   
+    
+    public function show(Request $request){
+        if(is_null($request->reg_no)){
+            return Student::All();  
+        }else{
+            return Student::where('reg_no',$request->reg_no)->get();       
+        }                  
+    } 
 
     
     public function store(Request $request){

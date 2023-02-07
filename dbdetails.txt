@@ -1,0 +1,2 @@
+MysqlDatabase   railway
+MysqlHost      containers-us-west-139.railway.app
